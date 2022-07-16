@@ -1,0 +1,244 @@
+@import '../../variables';
+
+body {
+  background-color: $gray;
+  overflow-x: hidden;
+}
+
+.hero {
+  margin-top: 5em;
+  h1 {
+    width: 85%;
+  }
+}
+
+.hero-showcase {
+  margin: 5em 0;
+  .text-featured {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+  }
+
+  .hero-showcase-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .hero-showcase-item {
+    width: 100%;
+    max-height: 520px;
+    .showcase-img {
+      object-fit: cover;
+      height: 480px;
+      width: 100%;
+    }
+  }
+  .showcase-text{
+    text-transform: uppercase;
+    margin: 2px 0;
+    font-size: 1.2em;
+  }
+  .showcase-desc {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .9em;
+  }
+}
+
+.home-about-container {
+  position: relative;
+  width: 100%;
+  .home-about-title {
+    text-transform: uppercase;
+    color: $lightred;
+    font-size: 1.5em;
+  }
+  .home-about-box {
+    position: absolute;
+    left: 20%;
+    top: 2%;
+    width: 80%;
+    height: 7px;
+    background: $lightred;
+  }
+  .home-about-list {
+    margin: 4em 0 7em 0;
+    h2 {
+      font-size: 5em;
+      font-weight: 300;
+      line-height: 1.4em;
+      margin: 15px 0;
+      text-transform: uppercase;
+      font-family: $sans;
+    }
+  }
+}
+
+.home-desc-container {
+  background: $lightred;
+  width: 100%;
+  height: 550px;
+  margin-top: 5em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  h2 {
+    font-size: 4em;
+    font-family: $sans;
+    letter-spacing: -2px;
+    font-weight: 400;
+    margin: 0;
+    span {
+      font-style: italic;
+      font-family: $serif;
+      letter-spacing: -3px;
+      font-weight: 700;
+    }
+  }
+  .btn {
+    width: 180px;
+    background: transparent;
+    border: 1px solid $white;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $lightred;
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+  }
+  p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin: 1em 0 2em 0;
+    width: 80%;
+  }
+}
+
+.home-client-container {
+  display: flex;
+  height: 75vh;
+  min-height: 550px;
+  .home-client-left {
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    flex-wrap: wrap;
+  }
+  .btn {
+    width: 250px;
+    background: transparent;
+    border: 1px solid $lightred;
+    color: $lightred;
+    &:hover {
+      background: $lightred;
+      color: $white;
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+  }
+  .home-client-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 1px;
+    background-color: $white;
+    border: 1px solid $white;
+    .home-client-logo {
+      background: $gray;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img {
+        width: 60%;
+        padding: 10px;
+        filter: grayscale(100%);
+      }
+    }
+  }
+  h2 {
+    font-size: 4em;
+    font-family: $serif;
+    letter-spacing: -3px;
+    line-height: .9em;
+    color: $lightred;
+    margin-bottom: 40px;
+  }
+}
+
+.home-contact-container {
+  width: 100%;
+  min-height: 500px; 
+  height: 100vh;
+  background: $gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-image-left {
+    width: 50%;
+    position: absolute;
+    left: -150px;
+    height: 100%; 
+    img {
+      height: 100%;
+    }
+  }
+  .contact-text-center {
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    font-family: $sans;
+    background-color: $main;
+    padding: 3em;
+    h5 {
+      color: $gray;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-top: -20px;
+      margin-bottom: 50px;
+    }
+    h3 {
+      font-size: 4em;
+      color: $white;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 1px;
+      font-weight: 600;
+      span {
+        font-family: $serif;
+        letter-spacing: -3px;
+        font-weight: 400;
+      }
+    }
+  }
+  .contact-image-right {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    height: 100%;  
+    img {
+      height: 100%;
+    }
+  }
+  .btn {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+    margin-top: 50px;
+    cursor: pointer;
+    &:hover {
+      background: $white;
+      color: $main;
+    }
+  }
+}

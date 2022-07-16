@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+$sans: 'Roboto', sans-serif;
+$serif: 'Source Serif', serif;
+
+$orange: #E67C25;
+$red: #D53226;
+$darkred: #BB1B24;
+$lightred: #D2394D;
+$crimson: #8B121D;
+$black: #222222;
+$main: #2a2a2a;
+$white: #ffffff;
+$gray: #eeeaea;
+
+
+h1 {
+  font-family: $sans;
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -1pxś
+}
+
+.text-red {
+  color: $red;
+}
+.text-orange {
+  color: $orange;
+}
+.text-crimson {
+  color: $crimson;
+}
+.text-lightred {
+  color: $lightred;
+}
+
+.btn {
+  padding: 18px 20px;
+  border-radius: 45px;
+  border: 1px solid $main;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
