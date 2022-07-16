@@ -12,7 +12,7 @@ const Layout = () => {
       </div>
       <footer>
         <div className="footer-left">
-          <img className="logo" src={Logo} />
+          <img className="logo" src={Logo} alt="logo"/>
           <h2>Let's work <span>together</span>.</h2>
         </div>
         <div class="footer-right">
