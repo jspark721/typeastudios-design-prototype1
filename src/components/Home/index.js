@@ -23,11 +23,11 @@ const Home = () => {
              <h5 className="showcase-text">project name</h5>
              <p className="showcase-desc">key art development | strategy</p>
            </div>
-           <div className="hero-showcase-item">
+           {/* <div className="hero-showcase-item">
              <img className="showcase-img" src="https://images.unsplash.com/photo-1470137237906-d8a4f71e1966?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
              <h5 className="showcase-text">project name</h5>
              <p className="showcase-desc">interactive design | strategy</p>
-           </div>
+           </div> */}
            <div className="hero-showcase-item">
              <img className="showcase-img" src="https://images.unsplash.com/photo-1635360381874-edd74cbd57f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" />
              <h5 className="showcase-text">project name</h5>
